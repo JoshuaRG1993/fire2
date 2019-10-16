@@ -1,0 +1,42 @@
+.comboPanePage {
+  max-width: 1920px;
+}
+
+.flexContainer {
+  min-height: 800px;
+  display: flex;
+  flex: 0 0 auto;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+
+.flexItem {
+  width: 100%;
+  margin: 0px auto;
+  position: relative;
+}
+
+.flexScroller {
+  /* https://stackoverflow.com/questions/21515042/scrolling-a-flexbox-with-overflowing-content */
+}
+
+.survey-panel {
+  order: 1;
+  flex-basis: 0;
+  align-self: flex-start;
+  background-color: #ccc;
+  display: inline-block;
+  margin-right: 10px;
+  /*height: 100px;*/
+}
+
+.preview-panel {
+  order: 2;
+  align-self: flex-start;
+  background-color: Gray;
+  display: inline-block;
+  margin-left: 10px;
+  /*height: 100px;*/
+}

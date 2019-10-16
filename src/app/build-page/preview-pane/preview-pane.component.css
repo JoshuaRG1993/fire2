@@ -1,0 +1,62 @@
+.jumbotron {
+  height: 100%;
+  width: 900px;
+  border: 5px solid;
+}
+
+address {
+  text-align: left;
+  text-space-collapse: collapse;
+}
+
+h1 {
+  text-align: left;
+  text-space-collapse: collapse;
+}
+
+h4 {
+  text-align: left;
+  text-space-collapse: collapse;
+}
+
+h5 {
+  text-align: left;
+  text-space-collapse: collapse;
+  text-decoration: underline;
+}
+
+.right {
+  position: relative;
+  float: right;
+  right: 10px;
+  width: 400px;
+  border: 3px solid;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.left {
+  margin: auto;
+  left: 3px;
+  margin-bottom: 10px;
+  border-radius: 25px;
+  border: 3px solid;
+  padding: 10px;
+}
+
+
+table {
+  font-family: Arial,sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 5px solid #dddddd;
+  text-align: right;
+  padding: 10px;
+}
+
+tr:nth-child(even) {
+  background-color: #ffffff;
+}

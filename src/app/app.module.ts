@@ -11,6 +11,12 @@ import { AppComponent } from './app.component';
 //import { EditUserResolver } from './edit-user/edit-user.resolver';
 // import { NewUserComponent } from './new-user/new-user.component';
  import { HomeComponent } from './home/home.component';
+ import { NavMenuComponent } from './nav-menu/nav-menu.component';
+ import { FetchDataComponent } from './fetch-data/fetch-data.component';
+ import { LoginPageComponent } from './login-page/login-page.component';
+ import { BuildPageComponent } from './build-page/build-page.component';
+ import { PreviewPaneComponent } from './build-page/preview-pane/preview-pane.component';
+ import { SurveyPaneComponent } from './build-page/survey-pane/survey-pane.component';
 
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
@@ -27,7 +33,13 @@ import {MatButtonModule, MatInputModule, MatSliderModule, MatDialogModule } from
     // AvatarDialogComponent,
     // EditUserComponent,
     // NewUserComponent,
-     HomeComponent
+     HomeComponent,
+    NavMenuComponent,
+    FetchDataComponent,
+    LoginPageComponent,
+    BuildPageComponent,
+    PreviewPaneComponent,
+    SurveyPaneComponent,
   ],
  // entryComponents: [AvatarDialogComponent],
   imports: [
@@ -41,7 +53,11 @@ import {MatButtonModule, MatInputModule, MatSliderModule, MatDialogModule } from
     MatButtonModule,
     MatInputModule,
     MatSliderModule,
-    MatDialogModule
+    MatDialogModule,
+  RouterModule.forRoot([
+      { path: '', component: LoginPageComponent, pathMatch: 'full' },
+    { path: 'fetch-data', component: FetchDataComponent },
+  ])
   ],
   providers: [FirebaseService], // , EditUserResolver],
   bootstrap: [AppComponent],
